@@ -3,33 +3,49 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour {
-    public static GameManager instance = null;
 
-    //Awake is always called before any Start functions
-    void Awake()
-    {
-        //Check if instance already exists
-        if (instance == null)
 
-            //if not, set instance to this
-            instance = this;
+	public static bool GameIsOver;
 
-        //If instance already exists and it's not this:
-        else if (instance != this)
+	public GameObject gameOverUI;
 
-            //Then destroy this. This enforces our singleton pattern, meaning there can only ever be one instance of a GameManager.
-            Destroy(gameObject);
+	public GameObject completeLevelUI;
 
-        //Sets this to not be destroyed when reloading scene
-        DontDestroyOnLoad(gameObject);
-    }
-        // Use this for initialization
-    void Start () {
-		
+	void Start()
+	{
+		GameIsOver = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
+
+		if(GameIsOver)
+		{
+			return;
+		}
+
+		if(Input.GetKeyDown ("e"))
+		{
+			EndGame ();
+		}
+
+		if(PlayerStats.Lives <= 0)
+		{
+			EndGame ();
+		}
+	}
+
+	void EndGame()
+	{
+		GameIsOver = true;
+		gameOverUI.SetActive (true);
+		Debug.Log ("Game Over!");
+
+	}
+
+	public void WinLevel()
+	{
+		GameIsOver = true;
+		completeLevelUI.SetActive (true);
 	}
 }
