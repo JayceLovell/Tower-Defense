@@ -8,7 +8,7 @@ public class SecretGameAccess : MonoBehaviour {
 	void Update () {
         if (Input.GetKeyDown("p"))
         {
-            SceneManager.LoadScene("SwordScene", LoadSceneMode.Additive);
+            SceneManager.LoadScene("SwordScene");
         }
     }
 }

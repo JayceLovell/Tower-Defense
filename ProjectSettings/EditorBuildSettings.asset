@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level02.unity
     guid: 012316b4d95b6a14c840440c98c9f18e
+  - enabled: 1
+    path: Assets/SecretGame/Scenes/SwordScene.unity
+    guid: eb810f223b28ae540b8ab9c1854d6a74
   m_configObjects: {}
