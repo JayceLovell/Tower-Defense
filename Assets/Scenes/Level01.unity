@@ -3523,7 +3523,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panSpeed: 30
-  panBorderThickness: 10
+  panBorderThickness: 5
   scrollSpeend: 5
   minY: 10
   maxY: 80
@@ -16974,6 +16974,11 @@ Prefab:
     - target: {fileID: 1971318942836504, guid: 33d393f1e05df0b4fbe4334251f76ad8, type: 2}
       propertyPath: m_Name
       value: Node (87)
+      objectReference: {fileID: 0}
+    - target: {fileID: 23975263921822244, guid: 33d393f1e05df0b4fbe4334251f76ad8,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33d393f1e05df0b4fbe4334251f76ad8, type: 2}

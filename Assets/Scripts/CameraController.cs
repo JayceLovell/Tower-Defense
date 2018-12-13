@@ -32,22 +32,22 @@ public class CameraController : MonoBehaviour {
 			return;
 		}
 
-		if(Input.GetKey ("w") || Input.mousePosition.y >= Screen.height - panBorderThickness)
+		if( (Input.GetKey ("w") || Input.mousePosition.y >= Screen.height - panBorderThickness) && gameObject.transform.position.z < -24f)
 		{
 			transform.Translate (Vector3.forward * panSpeed * Time.deltaTime, Space.World);
 		}
 
-		if(Input.GetKey ("s") || Input.mousePosition.y <= panBorderThickness)
+		if( (Input.GetKey ("s") || Input.mousePosition.y <= panBorderThickness) && gameObject.transform.position.z > -100f)
 		{
 			transform.Translate (Vector3.back * panSpeed * Time.deltaTime, Space.World);
 		}
 
-		if(Input.GetKey ("d") || Input.mousePosition.x >= Screen.width - panBorderThickness)
+		if( (Input.GetKey ("d") || Input.mousePosition.x >= Screen.width - panBorderThickness) && gameObject.transform.position.x < 65f)
 		{
 			transform.Translate (Vector3.right * panSpeed * Time.deltaTime, Space.World);
 		}
 
-		if(Input.GetKey ("a") || Input.mousePosition.x <= panBorderThickness)
+		if( (Input.GetKey ("a") || Input.mousePosition.x <= panBorderThickness) && gameObject.transform.position.x > 6f)
 		{
 			transform.Translate (Vector3.left * panSpeed * Time.deltaTime, Space.World);
 		}
