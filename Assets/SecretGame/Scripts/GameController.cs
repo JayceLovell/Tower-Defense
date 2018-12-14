@@ -24,7 +24,7 @@ public class GameController : MonoBehaviour {
         {
             OutOfBoundsRagdoll.deadtime = false;
             KillCount.kcount = 0;
-            SceneManager.LoadScene("MainScene");
+            SceneManager.LoadScene("SwordScene");
         }
 
 	}
