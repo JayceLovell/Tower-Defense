@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Enemy
-  m_Shader: {fileID: 4800000, guid: 70c999173117dad4d8ee23454dd38ca8, type: 3}
+  m_Shader: {fileID: 4800000, guid: 0f59b0d84bd609d45bbf3aa935f61822, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -39,7 +39,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 1da4e093bd9916d4fa9541d7c94cb64d, type: 3}
+        m_Texture: {fileID: 2800000, guid: 385df4dae2e39e247b9daedfee661d80, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
