@@ -26,6 +26,10 @@ public class GameController : MonoBehaviour {
             KillCount.kcount = 0;
             SceneManager.LoadScene("SwordScene");
         }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
 
 	}
 
